@@ -2,41 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Omar Said</title>
-  <h1>Welcome to my website</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Said | Personal Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#Home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#courses">Courses</a>
-      <a href="#Contact_us">Contact Us</a>
+    <nav class="navbar">
+      <div class="logo">Omar Said</div>
+      <div class="nav-links">
+        <a href="#Home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#courses">Courses</a>
+        <a href="#Contact_us">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <section id="Contact_us">
-    <h2>Contact Us</h2>
+  <section id="Home" class="hero-section">
+    <h1>Welcome  to  My  Personal  Website</h1>
+    <p>Crafted with style and passion.</p>
+  </section>
+
+  <section id="Contact_us" class="contact-section">
+    <h2>Contact Me</h2>
     <form>
-      <label for="name">Enter your name</label>
+      <label for="name">Your Name</label>
       <input id="name" type="text" name="name" required />
 
-      <label for="email">Enter your email</label>
+      <label for="email">Your Email</label>
       <input id="email" type="email" name="email" required />
 
-      <label for="password">Enter your password</label>
+      <label for="password">Password</label>
       <input id="password" type="password" name="password" required />
 
-      <label for="gender">Select your gender</label>
+      <label for="gender">Gender</label>
       <select id="gender" name="gender" required>
-        <option value="">--Select--</option>
+        <option value="">-- Select --</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
       </select>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 </body>
